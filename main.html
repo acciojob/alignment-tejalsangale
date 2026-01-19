@@ -18,7 +18,7 @@
         }
         table.middle td, table.middle th {
             border: 1px solid black;
-            padding: 5px;
+            padding: 1px; /* Updated to pass Cypress test */
         }
         .center {
             text-align: center;
@@ -44,7 +44,7 @@
 <table id="table-1" class="middle">
     <tr>
         <td id="t11">Cell 1</td>
-        <td id="t12">Cell 2</td>
+        <td id="t12" class="center">Cell 2</td> <!-- Added center class -->
         <td id="t13" class="right">Cell 3</td>
     </tr>
     <tr class="center">
@@ -114,7 +114,7 @@
         <td>Row 1</td>
     </tr>
     <tr>
-        <td id="t-image" colspan="3">
+        <td id="t-image" colspan="3" class="center">
             <img src="https://via.placeholder.com/150" alt="Example Image" width="150">
         </td>
     </tr>
