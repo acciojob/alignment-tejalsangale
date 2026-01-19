@@ -1,16 +1,129 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table.middle {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table.middle td, table.middle th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+            color: white;
+        }
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<h1>HTML Assignment #3</h1>
+
+<!-- Table 1 -->
+<table id="table-1" class="middle">
+    <tr>
+        <td id="t11">Cell 1</td>
+        <td id="t12">Cell 2</td>
+        <td id="t13" class="right">Cell 3</td>
+    </tr>
+    <tr class="center">
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+        <td class="right">Cell 6</td>
+    </tr>
+    <tr>
+        <td>Cell 7</td>
+        <td>Cell 8</td>
+        <td class="right">Cell 9</td>
+    </tr>
+</table>
+
+<!-- Table 2 -->
+<table id="table-2" class="middle">
+    <tr>
+        <td id="t21" colspan="6" class="center">This is a single cell spanning 6 columns</td>
+    </tr>
+    <tr>
+        <td>R2C1</td>
+        <td>R2C2</td>
+        <td>R2C3</td>
+        <td>R2C4</td>
+        <td>R2C5</td>
+        <td>R2C6</td>
+    </tr>
+    <tr>
+        <td>R3C1</td>
+        <td>R3C2</td>
+        <td>R3C3</td>
+        <td>R3C4</td>
+        <td>R3C5</td>
+        <td>R3C6</td>
+    </tr>
+    <tr>
+        <td>R4C1</td>
+        <td>R4C2</td>
+        <td>R4C3</td>
+        <td>R4C4</td>
+        <td>R4C5</td>
+        <td>R4C6</td>
+    </tr>
+    <tr>
+        <td>R5C1</td>
+        <td>R5C2</td>
+        <td>R5C3</td>
+        <td>R5C4</td>
+        <td>R5C5</td>
+        <td>R5C6</td>
+    </tr>
+    <tr>
+        <td>R6C1</td>
+        <td>R6C2</td>
+        <td>R6C3</td>
+        <td>R6C4</td>
+        <td>R6C5</td>
+        <td>R6C6</td>
+    </tr>
+</table>
+
+<!-- Table 3 -->
+<table id="table-3" class="middle">
+    <tr class="green">
+        <td>Row 1</td>
+        <td>Row 1</td>
+        <td>Row 1</td>
+    </tr>
+    <tr>
+        <td id="t-image" colspan="3">
+            <img src="https://via.placeholder.com/150" alt="Example Image" width="150">
+        </td>
+    </tr>
+    <tr class="blue">
+        <td>Row 3</td>
+        <td>Row 3</td>
+        <td>Row 3</td>
+    </tr>
+</table>
 
 </body>
-
 </html>
